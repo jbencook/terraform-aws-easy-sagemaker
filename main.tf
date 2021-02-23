@@ -1,9 +1,18 @@
 module "default_execution_role" {
   source = "./modules/execution-role"
+
+  # If you want to run the root example outside of this repo:
+  # source  = "jbencook/easy-sagemaker/aws//modules/execution-role"
+  # version = "0.0.2"
 }
 
 module "sagemaker_examples_repo" {
-  source         = "./modules/code-repository"
+  source = "./modules/code-repository"
+
+  # If you want to run the root example outside of this repo:
+  # source  = "jbencook/easy-sagemaker/aws//modules/code-repository"
+  # version = "0.0.2"
+
   repository_url = "https://github.com/aws/amazon-sagemaker-examples.git"
 }
 
@@ -12,7 +21,7 @@ module "ngrok_and_ttl_on_start" {
 
   # If you want to run the root example outside of this repo:
   # source  = "jbencook/easy-sagemaker/aws//modules/lifecycle-configuration"
-  # version = "0.0.2"  
+  # version = "0.0.2"
 
   time_to_live = {
     duration = "10 minutes"
