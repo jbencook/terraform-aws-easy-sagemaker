@@ -18,7 +18,7 @@ The [example in the root directory](./main.tf) creates a notebook instance with 
 * An [ngrok](https://ngrok.com/) account (you'll need your [Authtoken](https://dashboard.ngrok.com/auth/your-authtoken))
 * An SSH public key
 
-Then, follow these steps to deploy an instance:
+Then, follow these steps in the root directory of the repository to deploy an instance:
 
 1. Copy and paste the following into a file called `./secrets.tfvars`:
 
