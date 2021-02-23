@@ -8,6 +8,7 @@ module "sagemaker_examples_repo" {
 }
 
 module "ngrok_and_ttl_on_start" {
+  # TODO: add link to registry source
   source = "./modules/ezsm-lifecycle-configuration"
 
   time_to_live = {
@@ -15,7 +16,7 @@ module "ngrok_and_ttl_on_start" {
   }
 
   ngrok_ssh = {
-    authtoken  = var.ngrok_authtoken
+    authtoken   = var.ngrok_authtoken
     public_keys = var.ngrok_public_keys
   }
 
