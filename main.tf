@@ -8,8 +8,11 @@ module "sagemaker_examples_repo" {
 }
 
 module "ngrok_and_ttl_on_start" {
-  # TODO: add link to registry source
   source = "./modules/lifecycle-configuration"
+
+  # If you want to run the root example outside of this repo:
+  # source  = "jbencook/easy-sagemaker/aws//modules/lifecycle-configuration"
+  # version = "0.0.2"  
 
   time_to_live = {
     duration = "10 minutes"
