@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Original source: https://github.com/mariokostelac/sagemaker-setup
 echo "Setting up ssh with ngrok..."
 
 echo "Downloading ngrok..."

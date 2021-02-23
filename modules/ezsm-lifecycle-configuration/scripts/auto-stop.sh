@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Source: https://github.com/mariokostelac/sagemaker-setup
 set -e
 
 echo "Fetching the autostop script"
