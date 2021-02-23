@@ -13,7 +13,7 @@ There are two pre-requisites for using the easy SageMaker modules:
 
 ## Quick start
 
-The [example in the root directory](./main.tf) creates a notebook instance with SSH access (through [ngrok](https://ngrok.com/)) that lives for 10 minutes before shutting itself off. To run it in your account there are a couple requirements in addition to the [pre-requisites](#pre-requisites):
+The [example in the root directory](./main.tf) creates a notebook instance with SSH access (through [ngrok](https://ngrok.com/)) that lives for 10 minutes before shutting itself off. To run it in your account there are a couple requirements in addition to the pre-requisites:
 
 1. An ngrok account (you'll need your [Authtoken](https://dashboard.ngrok.com/auth/your-authtoken))
 2. An SSH [public key](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2)
