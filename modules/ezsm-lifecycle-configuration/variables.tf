@@ -1,3 +1,19 @@
+variable "on_start" {
+  type        = list(string)
+  default     = []
+  description = "A list of scripts to run on instance start"
+}
+
+variable "on_create" {
+  type        = list(string)
+  default     = []
+  description = "A list of scripts to run on instance creation"
+}
+
+# -------------
+# Named Scripts
+# -------------
+
 variable "github_config" {
   type = object({
     username = string
@@ -38,16 +54,4 @@ variable "ngrok_ssh" {
   })
   default     = null
   description = "Authentication information for connecting to your instance with ngrok"
-}
-
-variable "on_start" {
-  type        = list(string)
-  default     = []
-  description = "A list of scripts to run on instance start"
-}
-
-variable "on_create" {
-  type        = list(string)
-  default     = []
-  description = "A list of scripts to run on instance creation"
 }
