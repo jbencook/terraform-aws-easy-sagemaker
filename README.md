@@ -28,7 +28,7 @@ Then, follow these steps in the root directory of the repository to deploy an in
         "<ssh public key>",
     ]
     ```
-2. Add your ngrok authtoken and SSH public key into the appropriate places in `./secrets.tfvars`. The `ezsm-lifecycle-configuration` module  will store these as secrets in AWS Secrets Manager. Notice the `ngrok_public_keys` variable is an array. You can add multiple public keys if you want to give access to more than one SSH private key.
+2. Add your ngrok authtoken and SSH public key to the appropriate spots in `./secrets.tfvars`. The `ezsm-lifecycle-configuration` module  will store these as secrets in AWS Secrets Manager. Notice the `ngrok_public_keys` variable is an array -- you can add multiple public keys if you want to give access to more than one SSH private key.
 3. Initialize Terraform:
 
     ```
