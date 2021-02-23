@@ -27,27 +27,27 @@ variable "time_to_live" {
   type = object({
     duration = string
   })
-  default = null
+  default     = null
+  description = "The amount of time for the instance to run"
 }
 
 variable "ngrok_ssh" {
   type = object({
-    authtoken  = string
+    authtoken   = string
     public_keys = list(string)
   })
-  default = null
+  default     = null
+  description = "Authentication information for connecting to your instance with ngrok"
 }
 
 variable "on_start" {
-  type    = list(string)
-  default = []
-  validation {
-    condition     = !contains(var.on_start, "set_timezone")
-    error_message = "The set_timezone script can only be used in on_create."
-  }
+  type        = list(string)
+  default     = []
+  description = "A list of scripts to run on instance start"
 }
 
 variable "on_create" {
-  type    = list(string)
-  default = []
+  type        = list(string)
+  default     = []
+  description = "A list of scripts to run on instance creation"
 }
