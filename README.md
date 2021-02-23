@@ -53,7 +53,7 @@ Then, follow these steps in the root directory of the repository to deploy an in
     ssh -p 15954 ec2-user@4.tcp.ngrok.io
     ```
 
-If you don't want to setup SSH on your instance, check out [other examples](./examples/).
+Make sure to take a look at how this works in [main.tf](./main.tf)! If you don't want to setup SSH on your instance, check out [other examples](./examples/).
 
 ## Why Easy SageMaker Terraform modules?
 
