@@ -15,8 +15,8 @@ There are two pre-requisites for using the easy SageMaker modules:
 
 The [example in the root directory](./main.tf) creates a notebook instance with SSH access (through ngrok) that lives for 10 minutes before shutting itself off. To run it in your account there are a couple requirements in addition to the pre-requisites:
 
-1. An [ngrok](https://ngrok.com/) account (you'll need your [Authtoken](https://dashboard.ngrok.com/auth/your-authtoken))
-2. An SSH public key
+* An [ngrok](https://ngrok.com/) account (you'll need your [Authtoken](https://dashboard.ngrok.com/auth/your-authtoken))
+* An SSH public key
 
 Then, follow these steps to deploy an instance:
 
