@@ -9,7 +9,7 @@ These modules simplify the creation of SageMaker notebook instances and the reso
 There are two pre-requisites for using the easy SageMaker modules:
 
 * [Install](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) and [configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) AWS CLI
-* Download and install [Terraform>=0.14]](https://www.terraform.io/downloads.html)
+* Download and install [Terraform>=0.14](https://www.terraform.io/downloads.html)
 
 ## Quick start
 
