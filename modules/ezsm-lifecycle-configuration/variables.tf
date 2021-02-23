@@ -32,7 +32,7 @@ variable "time_to_live" {
 
 variable "ngrok_ssh" {
   type = object({
-    auth_token  = string
+    authtoken  = string
     public_keys = list(string)
   })
   default = null

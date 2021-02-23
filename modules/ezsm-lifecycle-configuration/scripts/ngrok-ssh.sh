@@ -13,7 +13,7 @@ EOF
 chmod +x /usr/local/bin/start-ngrok-ssh
 
 sudo -u ec2-user -i <<EOF
-ngrok authtoken $(aws secretsmanager get-secret-value --secret-id ${secret_id} | jq '.SecretString' --raw-output | jq '.auth_token')
+ngrok authtoken $(aws secretsmanager get-secret-value --secret-id ${secret_id} | jq '.SecretString' --raw-output | jq '.authtoken')
 aws secretsmanager get-secret-value --secret-id ${secret_id} | jq '.SecretString' --raw-output | jq '.public_keys' --raw-output >> /home/ec2-user/.ssh/authorized_keys
 start-ngrok-ssh
 EOF

@@ -1,8 +1,3 @@
-provider "aws" {
-  profile = "jbencook"
-  region  = "us-east-1"
-}
-
 module "default_execution_role" {
   source = "./modules/ezsm-execution-role"
 }
@@ -20,7 +15,7 @@ module "ngrok_and_ttl_on_start" {
   }
 
   ngrok_ssh = {
-    auth_token  = var.ngrok_auth_token
+    authtoken  = var.ngrok_authtoken
     public_keys = var.ngrok_public_keys
   }
 

@@ -14,7 +14,7 @@ resource "aws_secretsmanager_secret_version" "ngrok_ssh_secret_version" {
   count     = var.ngrok_ssh != null ? 1 : 0
   secret_id = aws_secretsmanager_secret.ngrok_ssh_secret[0].id
   secret_string = jsonencode({
-    auth_token  = var.ngrok_ssh.auth_token,
+    authtoken  = var.ngrok_ssh.authtoken,
     public_keys = join("\n", var.ngrok_ssh.public_keys)
   })
 }
