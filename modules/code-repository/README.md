@@ -6,7 +6,7 @@ This module manages code repositories for SageMaker notebook instances. It can a
 
 ```hcl
 module "simple_code_repository" {
-  source = "github.com/jbencook/terraform-aws-easy-sagemaker//modules/ezsm-code-repository"
+  source = "github.com/jbencook/terraform-aws-easy-sagemaker//modules/code-repository"
 
   repository_url = "https://github.com/jbencook/giraffe-pose.git"
   auth = {

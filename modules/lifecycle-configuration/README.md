@@ -16,7 +16,7 @@ The following scripts can be configured and added to a managed lifecycle configu
 
 ```hcl
 module "simple_lifecycle_config" {
-  source = "github.com/jbencook/terraform-aws-easy-sagemaker//modules/ezsm-lifecycle-configuration"
+  source = "github.com/jbencook/terraform-aws-easy-sagemaker//modules/lifecycle-configuration"
 
   github_config = {
     username = "jbencook"

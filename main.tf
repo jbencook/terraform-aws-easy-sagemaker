@@ -1,15 +1,15 @@
 module "default_execution_role" {
-  source = "./modules/ezsm-execution-role"
+  source = "./modules/execution-role"
 }
 
 module "sagemaker_examples_repo" {
-  source         = "./modules/ezsm-code-repository"
+  source         = "./modules/code-repository"
   repository_url = "https://github.com/aws/amazon-sagemaker-examples.git"
 }
 
 module "ngrok_and_ttl_on_start" {
   # TODO: add link to registry source
-  source = "./modules/ezsm-lifecycle-configuration"
+  source = "./modules/lifecycle-configuration"
 
   time_to_live = {
     duration = "10 minutes"

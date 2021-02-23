@@ -6,7 +6,7 @@ This module manages execution roles for SageMaker notebook instances. The `Amazo
 
 ```hcl
 module "simple_execution_role" {
-  source = "github.com/jbencook/terraform-aws-easy-sagemaker//modules/ezsm-execution-role"
+  source = "github.com/jbencook/terraform-aws-easy-sagemaker//modules/execution-role"
 
   policy_arns = [
     "arn:aws:iam::aws:policy/SecretsManagerReadWrite"
