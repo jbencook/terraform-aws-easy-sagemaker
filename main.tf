@@ -39,7 +39,7 @@ module "ngrok_and_ttl_on_start" {
 }
 
 resource "aws_sagemaker_notebook_instance" "instance" {
-  name                    = "ezsm"
+  name                    = "ezsm-root-example"
   role_arn                = module.default_execution_role.arn
   instance_type           = "ml.t2.medium"
   default_code_repository = module.sagemaker_examples_repo.name

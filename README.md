@@ -55,6 +55,12 @@ Then, follow these steps in the root directory of the repository to deploy an in
 
 Make sure to take a look at how this works in [main.tf](https://github.com/jbencook/terraform-aws-easy-sagemaker/blob/main/main.tf)! If you don't want to setup SSH on your instance, check out [other examples](https://github.com/jbencook/terraform-aws-easy-sagemaker/tree/main/examples).
 
+When you're done, you can tear all the resources down with the following command:
+
+```
+terraform destroy
+```
+
 ## Why Easy SageMaker Terraform modules?
 
 Terraform recommends _not_ writing thin wrappers around single resources. This is good advice for people who are comfortable with Terraform. If that's you, then you probably won't find the [code-repository](https://github.com/jbencook/terraform-aws-easy-sagemaker/tree/main/modules/code-repository/) or [execution-role](https://github.com/jbencook/terraform-aws-easy-sagemaker/tree/main/modules/execution-role/) modules particularly helpful. No problem! Feel free to use the managed lifecycle configuration scripts in the [lifecycle-configuration](https://github.com/jbencook/terraform-aws-easy-sagemaker/tree/main/modules/lifecycle-configuration/) module by itself.
