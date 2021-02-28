@@ -58,7 +58,7 @@ Make sure to take a look at how this works in [main.tf](https://github.com/jbenc
 When you're done, you can tear all the resources down with the following command:
 
 ```
-terraform destroy
+terraform destroy -var-file=secrets.tfvars
 ```
 
 ## Why Easy SageMaker Terraform modules?
